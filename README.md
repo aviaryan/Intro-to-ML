@@ -1,4 +1,7 @@
-ud120-projects
+Intro to Machine Learning projects
 ==============
 
-Starter project code for students taking Udacity ud120
+My work for the UD120 course.
+
+Parent repo - https://github.com/udacity/ud120-projects/
+
