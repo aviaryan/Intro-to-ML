@@ -2,6 +2,7 @@
 
 """ 
     This is the code to accompany the Lesson 2 (SVM) mini-project.
+    http://scikit-learn.org/stable/modules/svm.html
 
     Use a SVM to identify emails from the Enron corpus by their authors:    
     Sara has label 0
