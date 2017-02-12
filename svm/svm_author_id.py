@@ -31,8 +31,8 @@ features_train, features_test, labels_train, labels_test = preprocess()
 #########################################################
 
 # make set small
-# features_train = features_train[:len(features_train)/100] 
-# labels_train = labels_train[:len(labels_train)/100] 
+features_train = features_train[:len(features_train)/100] 
+labels_train = labels_train[:len(labels_train)/100]
 
 # svm
 clf = SVC(kernel="rbf", cache_size=7000, C=10000.0)
@@ -47,6 +47,9 @@ print "training time:", round(time()-t0, 3), "s"
 t0 = time()
 
 pred = clf.predict(features_test)
+
+print pred[10], pred[26], pred[50]
+
 acc = accuracy_score(pred, labels_test)
 print acc
 
