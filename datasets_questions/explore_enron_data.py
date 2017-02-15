@@ -18,5 +18,16 @@
 import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+poi_ct = 0
 
+for i in enron_data:
+	if enron_data[i]['poi'] == 1:
+		poi_ct += 1
+	# if i == 'PRENTICE JAMES':
+	# 	print enron_data[i]
+	# if i == 'COLWELL WESLEY':
+	# 	print enron_data[i]
+	if i == 'SKILLING JEFFREY K':
+		print enron_data[i]
 
+print poi_ct
